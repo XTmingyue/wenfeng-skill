@@ -1,4 +1,4 @@
 interface:
-  display_name: "Novelist Lite"
-  short_description: "从单本小说蒸馏写作 Skill 的轻量开源辅助工具"
-  default_prompt: "Use $novelist-lite to distill a single novel into a reusable writer-style SKILL.md."
+  display_name: "文风 Skill"
+  short_description: "从单本小说提炼叙事、语言指纹与写作 Skill"
+  default_prompt: "Use $wenfeng-skill to distill a single novel into a reusable writer-style SKILL.md."
