@@ -6,7 +6,7 @@ description: |
 
 # 文风 Skill（单本作品版）
 
-目标：从一部作品中提炼可执行的叙事操作系统，生成一个可直接作为 Codex Skill 使用的 `SKILL.md`。
+目标：从一部作品中提炼可执行的叙事操作系统，生成一个可直接作为 Agent Skill 使用的 `SKILL.md`。
 
 最终只交付目标 skill 文件：
 
@@ -31,7 +31,7 @@ description: |
 
 1. 单本作品来源：本地文本路径、粘贴文本、或用户明确提供的可分析材料。
 2. 目标 skill 名称：默认从作品名或作者名归一化为 `[name]-novelist`。
-3. 输出位置：用户未指定时，默认写入 `${CODEX_HOME:-$HOME/.codex}/skills/[name]-novelist/SKILL.md`。
+3. 输出位置：用户未指定时，默认写入当前运行环境的 skills 目录下，例如 `<skills-dir>/[name]-novelist/SKILL.md`。
 
 如果没有可访问的作品文本或足够材料，先向用户索要文本或路径；不要改走网搜作家研究路线。
 
