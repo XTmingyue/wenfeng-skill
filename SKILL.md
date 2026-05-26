@@ -1,7 +1,7 @@
 ---
 name: wenfeng-skill
 description: |
-  文风 Skill：当用户提供一部小说、单本作品文本、文件路径或明确语料，并要求「蒸馏作家」「从这本书生成 Skill」「造一个 XX 风格写作 Skill」「提炼这本作品的笔法」「提炼文风」时使用。只从单本作品中提炼叙事技艺、语言指纹和创作规则，并生成一个目标 SKILL.md；不做多作家融合、模糊推荐、阅读灵感库、AGENTS.md、system_prompt.md 或长期研究系统。
+  文风 Skill：当用户提供一部小说、单本作品文本、文件路径或明确语料，并要求「蒸馏作家」「从这本书生成 Skill」「造一个 XX 风格写作 Skill」「提炼这本作品的笔法」「提炼文风」时使用。只从单本作品中提炼叙事技艺、语言指纹和创作规则，并生成一个目标 SKILL.md。
 ---
 
 # 文风 Skill（单本作品版）
@@ -14,8 +14,6 @@ description: |
 [skill-name]/
 └── SKILL.md
 ```
-
-不要创建阅读灵感库、拆书笔记、`AGENTS.md`、`system_prompt.md`、多作家融合分析或其他长期维护文件。
 
 ## 工作原则
 
@@ -188,5 +186,3 @@ description: |
 - YAML frontmatter 只有 `name` 和 `description`。
 - 至少有 3 个叙事模型、5 条创作规则、5 条不可写、3 条诚实边界。
 - 没有原作摘录、具体对话、长段情节复述或近似改写。
-- 没有阅读灵感系统、多作家融合、推荐诊断、`AGENTS.md`、`system_prompt.md` 的指令。
-- 如果本地有 skill 校验脚本，运行校验；否则手动确认 frontmatter 可被解析。
